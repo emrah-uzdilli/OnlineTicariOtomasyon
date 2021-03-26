@@ -1,0 +1,56 @@
+﻿@using OnlineTicariOtomasyon.Models.Siniflar
+@model List<KargoDetay>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br>
+
+@using (Html.BeginForm("Index", "Kargo", FormMethod.Get))
+{
+    <p>
+        Kargo Takip No: @Html.TextBox("p")<input type="submit" value="Ara" />
+
+    </p>
+}
+<div>
+    @using (Html.BeginForm("Index", "QR", FormMethod.Post))
+    {
+    <p>
+        Kargo Takip No:
+        <input type="text" name="kod" />
+        <input type="submit" value="QR oluştur" />
+    </p>
+    }
+    <br />
+    @if (ViewBag.karekodimage != null)
+    {
+        <img src="@ViewBag.karekodimage" alt="" style="width:300px;height:300px" />
+    }
+</div>
+
+<table class="table table-bordered" style="margin-top:20px">
+    <tr>
+        <th>Personel</th>
+        <th>Alıcı</th>
+        <th>Takip Kod</th>
+        <th>Tarih</th>
+        <th>Detaylar</th>
+        <th>QR Kodu</th>
+    </tr>
+    @foreach (var k in Model)
+    {
+        <tr>
+            <td>@k.Personel</td>
+            <td>@k.Alici</td>
+            <td>@k.TakipKodu</td>
+            <td>@k.Tarih</td>
+            <td><a href="/Kargo/KargoTakip/@k.TakipKodu" class="btn btn-default" style="background-color:darkorange">Detaylar</a></td>
+            <td><a href="/QR/Index/@k.TakipKodu" class="btn btn-default" style="background-color:darkorange">Detaylar</a></td>
+        </tr>
+
+    }
+
+</table>
+<a href="/Kargo/YeniKargoEkle" class="btn btn-primary">Yeni kargo Girişi</a>
+
