@@ -1,11 +1,16 @@
 # OnlineTicariOtomasyon
 Sql ~ Entity Framework ~ Code First ~ Html5 ~ Css3 ~ Bootstrap4
+
 => LOGIN PANEL <=
+
 ![Capture](https://user-images.githubusercontent.com/62702253/112596369-c62d0600-8e1c-11eb-8441-0f39f0a8576a.PNG)
+
 => CARİ PANEL <=
+
 ![Capture2](https://user-images.githubusercontent.com/62702253/112596480-eeb50000-8e1c-11eb-8323-faf6e314d06b.PNG)
 ![Capture3](https://user-images.githubusercontent.com/62702253/112596488-efe62d00-8e1c-11eb-8b85-eea4845a1dad.PNG)
 ![Capture4](https://user-images.githubusercontent.com/62702253/112596494-f2488700-8e1c-11eb-86ba-a5be7ea1bd23.PNG)
+
 => ADMIN/PERSONEL PANEL <=
 
 ![Persenol8](https://user-images.githubusercontent.com/62702253/112596580-0f7d5580-8e1d-11eb-931b-2e15500fe0fb.PNG)
